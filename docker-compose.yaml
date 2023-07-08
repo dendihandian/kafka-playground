@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+
+  zookeeper:
+    build:
+      context: ./docker/zookeeper
+      dockerfile: ./Dockerfile
+
+  kafka:
+    build:
+      context: ./docker/kafka
+      dockerfile: ./Dockerfile
+
+  kafka-ui:
+    build:
+      context: ./docker/kafka-ui
+      dockerfile: ./Dockerfile
