@@ -12,7 +12,7 @@ services:
       context: ./docker/kafka
       dockerfile: ./Dockerfile
 
-  kafka-ui:
+  kui:
     build:
-      context: ./docker/kafka-ui
+      context: ./docker/kui
       dockerfile: ./Dockerfile
